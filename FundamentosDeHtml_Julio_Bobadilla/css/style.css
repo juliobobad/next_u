@@ -1,0 +1,68 @@
+/*
+
+style.css
+
+---------
+
+Por Julio Cesar Bobadilla
+
+*/
+
+body { color: verde }
+body { background-color: #cccccc}
+
+p {
+    color: black;
+    font-family: Verdana;
+}
+h1,h2,h3 {
+
+color: green;
+
+}
+
+nav {
+ font-family: Arial;
+ font-size: 16px;
+ text-decoration: none;
+ text-transform: uppercase;
+ float: none;
+ padding: 10px;
+ background-color: #008080;
+ color: #fff;
+ text-align: center;
+ }
+
+ nav a {
+    background-color: none;
+    margin-top: -2;
+    padding-bottom: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #ffffff;
+    }
+
+nav a:hover {
+  background-color: #ffffff;
+  margin-top: -2;
+  padding-bottom: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #000000;
+  }
+
+
+tr .toptable {
+    color: white;
+    font-family: Verdana;
+    background-color: #cccccc;
+}
+
+/*Seccion tablas*/
+
+table {
+  border-collapse: collapse;
+  width: 1280px;
+}
