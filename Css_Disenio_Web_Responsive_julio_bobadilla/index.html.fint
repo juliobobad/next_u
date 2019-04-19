@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width: device-width">
+    <title>Css y Disenio Web Responsive - Julio Bobadilla</title>
+    <link rel="stylesheet" href="css/estilos.css">
+   </head>
+   <body>
+      <div class="contenido" role="main">
+        <div class="cabecera">
+            <div class="titulo"><h1>Comenzando con la fotografía</h1></div><div class="menu"><nav><h3><a href="index.html"> Inicio</a> ||| <a href="paisajes.html"> Paisajes</a> ||| <a href="retratos.html"> Retratos</a></h3></nav></div>
+        </div>
+        <section id="imagenes">
+           <div id="contenedor">
+             <section>
+               <article id="columna1"><img src="images/imagen_central.jpg" ></article>
+               <article id="columna2"><a href="paisajes.html"><img src="images/imagen_sec1.jpg" ></a></article>
+               <article id="columna3"><a href="retratos.html"><img src="images/imagen_sec2.jpg" ></a></article>
+             </section>
+           </div>
+        </section>
+        <div class="pie">
+            <section id="inferior">
+              <article id="columna4">Contactos</article>
+              <article id="columna5">Terminos</article>
+              <article id="columna6">Redes Sociales</article>
+              <article id="columna7">Derechos</article>
+            </section>
+        </div>
+      </div>
+    </body>
+</html>

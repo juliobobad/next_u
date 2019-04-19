@@ -1,0 +1,383 @@
+/*Estilos proyecto final css y disenio web responsive*/
+/*fuentes locales*/
+
+body{
+  text-decoration: none;
+  background-color: #02010a;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+   font-family: 'DancingScriptRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1 {
+   font-family: 'DancingScriptRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+#contenido {
+     width: 900px;
+     background-color: #5b7989;
+     border-radius: 10px;
+     margin: 0 auto;
+     height: auto;
+}
+
+#cabecera {
+  display: flex;
+  height: 100%;
+  flex-flow: row;
+}
+
+.titulo {
+	margin: auto;
+  background-color: #5b7989;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #02010a;
+  border-radius: 10px;
+  float: left;
+}
+.menu {
+	margin: auto;
+  background-color: #5b7989;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #02010a;
+  border-radius: 10px;
+  float: left;
+}
+
+.pie {
+  font-family: 'DancingScriptRegular';
+	margin: auto;
+  padding-top: 20px;
+  margin-top: 0;
+	width: 95%;
+	display: flex;
+	flex-flow: row wrap;
+  background-color: #C6d5c5;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #02010a;
+  border-radius: 0 0 10px 10px;
+  list-style: none;
+}
+/*estilos para el menu principal*/
+
+nav{
+  font-family: 'DancingScriptRegular';
+  font-size: 16px;
+  text-decoration: none;
+  float: right;
+  padding: 10px;
+  background-color: none;
+  color: #fff;
+  text-align: center;
+}
+
+nav a {
+  background-color: none;
+  margin-top: -2;
+  padding-bottom: 12px;
+  text-decoration: none;
+  padding: 10px;
+  color: #ffffff;
+}
+
+nav a:hover {
+  background-color: none;
+  margin-top: -2;
+  padding-bottom: 12px;
+  text-decoration: none;
+  padding: 10px;
+  color: #cccccc;
+}
+
+.menu{
+  float: right;
+}
+/*Fin de estilos para el Menu Principal
+
+  /*Estilos par los bloques de fotos*/
+
+#img{
+  shadow: 2px 2px 2px #02010a;
+  transform: rotate(10deg);
+}
+.contenedorp{
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  display: -webkit-flex;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+}
+
+.bloque1{
+  color: #fff;
+  background-color: #82c3a6;
+  order: 1;
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedors {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.bloque2 {
+  background: #d5c75f;
+  width: 50%;
+  padding: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.bloque3 {
+  background: #d5c75f;
+  width: 50%;
+  padding: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 6px;
+}
+
+  /*Estilos par los bloques del Pie*/
+
+.pie{
+  height: 180px;
+  display: flex;
+  padding-top: 50px;
+  flex-flow: row wrap;
+  width: 900px;
+}
+.bloque4{
+  color: #000000;
+  order: 1;
+  flex-grow: 2;
+  width: 25%;
+}
+.bloque5{
+  color: #000000;
+  order: 2;
+  flex-grow: 2;
+  width: 25%;
+}
+.bloque6{
+  color: #000000;
+  order: 3;
+  flex-grow: 2;
+  width: 25%;
+}
+.bloque7{
+  color: #000000;
+  order: 4;
+  flex-grow: 2;
+  width: 25%;
+}
+
+figure {
+	text-align: center;
+	margin: 0;
+}
+
+figure img {
+	width: 400px;
+}
+
+#imagen1 img{
+	transition-property: border;
+	transition-duration: 0.5s;
+}
+
+#imagen1 img:hover{
+	transform: rotate(10deg);
+  transition: border(2px 0.5s);
+}
+
+#imagen2 img{
+  transition-property: border;
+	transition: opacity 0,5s;
+}
+
+#imagen2 img:hover{
+  transition-property: border;
+  transform: translate(20px, -5px);
+}
+
+
+/*Estilos para los retratos*/
+.retrato1,
+.retrato2 {
+    color: #fff;
+    font: 100 24px/100px sans-serif;
+    height: 195px;
+    text-align: center;
+		}
+
+		.retrato1 div,
+		.retrato2 div {
+		    height: 100%;
+		    width: 100%;
+		}
+		.ret1 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+        filter: blur(10px);
+		}
+		.ret2 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+		}
+		.ret3 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+        filter: sepia(90%);
+		}
+
+    .ret4 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+		}
+		.ret5 {
+		    background: #d5c75f;
+        padding-top: 10px;
+
+		}
+		.ret6 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+
+		}
+/* Estilo Flexbox para retratos */
+
+		.retrato1 {
+		    display: flex;
+		    flex-wrap: nowrap;
+		}
+		.retrato2 {
+		    display: flex;
+		    flex-wrap: nowrap;
+		}
+/*Fin de estilos para retratos*/
+/*estilos para los paisajes*/
+    .paisaje1,
+    .paisaje2 {
+        color: #fff;
+        font: 100 24px/100px sans-serif;
+        height: 183px;
+        text-align: center;
+    		}
+
+    		.paisaje1 div,
+    		.paisaje2 div {
+    		    height: 100%;
+    		    width: 100%;
+    		}
+    		.pai1 {
+    		    background: #d5c75f;
+            padding-top: 10px;
+            -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+            filter: blur(10px);
+    		}
+    		.pai2 {
+    		    background: #d5c75f;
+            padding-top: 10px;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+    		}
+    		.pai3 {
+    		    background: #d5c75f;
+            padding-top: 10px;
+            -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+            filter: sepia(90%);
+    		}
+
+        .pai4 {
+    		    background: #d5c75f;
+            padding-top: 10px;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+    		}
+    		.pai5 {
+    		    background: #d5c75f;
+            padding-top: 10px;
+    		}
+    		.pai6 {
+    		    background: #d5c75f;
+            padding-top: 10px;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+    		}
+    		.paisaje1 {
+    		    display: flex;
+    		    flex-wrap: nowrap;
+    		}
+    		.paisaje2 {
+    		    display: flex;
+    		    flex-wrap: nowrap;
+    		}
+/*fin de galeria de Paisajes */
+/*Para celular*/
+
+@media screen and (max-width: 480px){
+
+#contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+  #bloque1
+	{
+	width: 100%;
+	}
+	#bloque2
+	{
+	width: 100%;
+	}
+	#bloque3
+	{
+	width: 100%;
+	}
+
+	cabecera
+	{
+	width:100%;
+	}
+}
