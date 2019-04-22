@@ -28,19 +28,25 @@ h1 {
      height: auto;
 }
 
-#cabecera {
-  display: flex;
-  height: 100%;
-  flex-flow: row;
+/* Estilos para la Cabecera Titulo+Menu*/
+
+.cabecera {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items:stretch;
 }
 
 .titulo {
 	margin: auto;
+  padding-left: 50px;
   background-color: #5b7989;
   color: #ffffff;
   text-shadow: 1px 1px 2px #02010a;
   border-radius: 10px;
   float: left;
+  flex-basis:400px;
 }
 .menu {
 	margin: auto;
@@ -49,22 +55,26 @@ h1 {
   text-shadow: 1px 1px 2px #02010a;
   border-radius: 10px;
   float: left;
+  flex-basis:400px;
 }
 
-.pie {
-  font-family: 'DancingScriptRegular';
-	margin: auto;
-  padding-top: 20px;
-  margin-top: 0;
-	width: 95%;
-	display: flex;
-	flex-flow: row wrap;
-  background-color: #C6d5c5;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #02010a;
-  border-radius: 0 0 10px 10px;
-  list-style: none;
+@media screen and (min-width:480px) {
+    .cabecera {
+       flex-wrap:nowrap;
 }
+    .titulo {
+        flex-basis:200px;
+        order:1;
+        justify-content: center;
+}
+    .menu {
+        flex-basis:200px;
+        order:2;
+        justify-content: center;
+}
+
+/* Fin de los estilos para la Cabecera*/
+
 /*estilos para el menu principal*/
 
 nav{
@@ -134,75 +144,115 @@ nav a:hover {
 }
 
 .contenedors {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:stretch;
+
+    width: 900px;
+    background-color: #d5c75f;
 }
 
-.bloque2 {
-  background: #d5c75f;
-  width: 50%;
-  padding: none;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 6px;
-}
+.left {order:1; flex-basis:100%; height:307px;padding-top: 50px;}
+.right {order:2; flex-basis:100%; height:307px;padding-top: 50px;}
 
-.bloque3 {
-  background: #d5c75f;
-  width: 50%;
-  padding: none;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 6px;
-}
+@media screen and (min-width:480px) {
+   .contenedors {
+       flex-wrap:nowrap;
+   }
+
+    .left {
+        flex-basis:400px;
+        order:1;
+        justify-content: center;
+    }
+    .right {
+        flex-basis:400px;
+        order:2;
+        justify-content: center;
+    }
 
   /*Estilos par los bloques del Pie*/
 
-.pie{
-  height: 180px;
-  display: flex;
-  padding-top: 50px;
-  flex-flow: row wrap;
-  width: 900px;
-}
-.bloque4{
+.pie {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:stretch;
+
+    width: 900px;
+    background-color: #C6d5c5;
+    font-family: 'DancingScriptRegular';
+  	margin: auto;
+    padding-top: 20px;
+    margin-top: 0;
+  	display: flex;
+  	flex-flow: row wrap;
+    background-color: #C6d5c5;
+    text-shadow: 1px 1px 2px #02010a;
+    border-radius: 0 0 10px 10px;
+    list-style: none;
+  }
+
+.contactos{
+  padding-top: 10px;
   color: #000000;
-  order: 1;
-  flex-grow: 2;
+  flex-basis: auto;
+  order:1;
   width: 25%;
+  align-items: flex-start;
+
 }
-.bloque5{
+.politica{
+  padding-top: 10px;
   color: #000000;
-  order: 2;
-  flex-grow: 2;
+  flex-basis: auto;
+  order:2;
   width: 25%;
+  align-items: flex-start;
 }
-.bloque6{
+.sociales{
+  padding-top: 10px;
   color: #000000;
-  order: 3;
-  flex-grow: 2;
+  flex-basis: auto;
+  order:3;
   width: 25%;
+  align-items: flex-start;
 }
-.bloque7{
+.derechos{
+  padding-top: 10px;
   color: #000000;
-  order: 4;
-  flex-grow: 2;
+  flex-basis: auto;
+  order:4;
   width: 25%;
+  align-items: flex-start;
 }
+
+@media screen and (min-width:480px) {
+   .pie {
+       flex-wrap:nowrap;
+   }
+
+    .contactos {
+        flex-basis:230px;
+        justify-content: center;
+    }
+    .politica {
+        flex-basis:230px;
+          justify-content: center;
+    }
+    .sociales {
+        flex-basis:230px;
+          justify-content: center;
+    }
+    .derechos {
+        flex-basis:230px;
+          justify-content: center;
+    }
+/*Fin de estilos del Pie*/
+/*Estilos de las imagenes secundarias de la Homepage*/
 
 figure {
 	text-align: center;
@@ -355,29 +405,3 @@ figure img {
     		}
 /*fin de galeria de Paisajes */
 /*Para celular*/
-
-@media screen and (max-width: 480px){
-
-#contenido
-	{
-		width: 100%;
-		margin: 0 auto;
-	}
-  #bloque1
-	{
-	width: 100%;
-	}
-	#bloque2
-	{
-	width: 100%;
-	}
-	#bloque3
-	{
-	width: 100%;
-	}
-
-	cabecera
-	{
-	width:100%;
-	}
-}
