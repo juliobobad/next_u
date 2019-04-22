@@ -47,47 +47,18 @@ h1 {
 
 /* Estilos para la Cabecera Titulo+Menu*/
 
-.cabecera {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:row;
-  justify-content: flex-start;
-  align-items:stretch;
+#cabecera {
+  display: flex;
+  background-color: #5b7989;
 }
 
 .titulo {
-	margin: auto;
-  padding-left: 50px;
-  background-color: #5b7989;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #02010a;
-  border-radius: 10px;
-  float: left;
-  flex-basis:400px;
+	color: white;
 }
 .menu {
-	margin: auto;
-  background-color: #5b7989;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #02010a;
-  border-radius: 10px;
-  float: left;
-  flex-basis:400px;
-}
-
-@media screen and (min-width:480px) {
-    .cabecera {
-       flex-wrap:nowrap;
-}
-    .titulo {
-        flex-basis:200px;
-        order:1;
-        justify-content: center;
-}
-    .menu {
-        flex-basis:200px;
-        order:2;
-        justify-content: center;
+  color: white;
+  margin-top: 3%;
+  margin-left: 30%;
 }
 
 /* Fin de los estilos para la Cabecera*/
@@ -98,11 +69,6 @@ nav{
   font-family: 'DancingScriptRegular';
   font-size: 16px;
   text-decoration: none;
-  float: right;
-  padding: 10px;
-  background-color: none;
-  color: #fff;
-  text-align: center;
 }
 
 nav a {
@@ -123,9 +89,6 @@ nav a:hover {
   color: #cccccc;
 }
 
-.menu{
-  float: right;
-}
 /*Fin de estilos para el Menu Principal
 
   /*Estilos par los bloques de fotos*/
