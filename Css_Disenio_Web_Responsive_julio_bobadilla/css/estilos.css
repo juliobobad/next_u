@@ -21,11 +21,28 @@ h1 {
 }
 
 #contenido {
-     width: 900px;
-     background-color: #5b7989;
-     border-radius: 10px;
-     margin: 0 auto;
-     height: auto;
+  width: 900px;
+  background-color: #5b7989;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {margin-top: 150%;}
+  60%  {margin-top: -5%;}
+  100% {margin-top: 0%;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0%   {margin-top: 150%;}
+  60%  {margin-top: -5%;}
+  100% {margin-top: 0px;}
 }
 
 /* Estilos para la Cabecera Titulo+Menu*/
@@ -285,8 +302,7 @@ figure img {
 
 
 /*Estilos para los retratos*/
-.retrato1,
-.retrato2 {
+.retrato1, .retrato2 {
     color: #fff;
     font: 100 24px/100px sans-serif;
     height: 195px;
@@ -333,8 +349,8 @@ figure img {
         padding-top: 10px;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
-
 		}
+}
 /* Estilo Flexbox para retratos */
 
 		.retrato1 {
@@ -345,10 +361,61 @@ figure img {
 		    display: flex;
 		    flex-wrap: nowrap;
 		}
+
+@media (max-width: 900px){
+
+  .retrato1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+  .retrato2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    .ret1 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+        filter: blur(10px);
+		}
+		.ret2 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+		}
+		.ret3 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+        filter: sepia(90%);
+		}
+
+    .ret4 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+		}
+		.ret5 {
+		    background: #d5c75f;
+        padding-top: 10px;
+
+		}
+		.ret6 {
+		    background: #d5c75f;
+        padding-top: 10px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+
+		}
+}
 /*Fin de estilos para retratos*/
+
 /*estilos para los paisajes*/
-    .paisaje1,
-    .paisaje2 {
+        .paisaje1, .paisaje2 {
         color: #fff;
         font: 100 24px/100px sans-serif;
         height: 183px;
@@ -403,5 +470,55 @@ figure img {
     		    display: flex;
     		    flex-wrap: nowrap;
     		}
+
+@media (max-width: 900px){
+
+.paisaje1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+.paisaje2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+  .pai1 {
+      background: #d5c75f;
+      padding-top: 10px;
+      -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+      filter: blur(10px);
+  }
+  .pai2 {
+      background: #d5c75f;
+      padding-top: 10px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+  .pai3 {
+      background: #d5c75f;
+      padding-top: 10px;
+      -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+      filter: sepia(90%);
+  }
+
+  .pai4 {
+      background: #d5c75f;
+      padding-top: 10px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+  .pai5 {
+      background: #d5c75f;
+      padding-top: 10px;
+  }
+  .pai6 {
+      background: #d5c75f;
+      padding-top: 10px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+}
+
 /*fin de galeria de Paisajes */
 /*Para celular*/
