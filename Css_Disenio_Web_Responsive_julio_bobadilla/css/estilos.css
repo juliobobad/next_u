@@ -54,6 +54,7 @@ h1 {
 
 .titulo {
 	color: white;
+  padding-left: 20px;
 }
 .menu {
   color: white;
@@ -155,26 +156,22 @@ nav a:hover {
 
   /*Estilos par los bloques del Pie*/
 
-.pie {
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:center;
-    align-items:stretch;
+  .pie {
+      display:flex;
+      flex-wrap:wrap;
+      flex-flow: row wrap;
+      flex-direction:row;
+      justify-content:center;
+      align-items:flex-start;
 
-    width: 900px;
-    background-color: #C6d5c5;
-    font-family: 'DancingScriptRegular';
-  	margin: auto;
-    padding-top: 20px;
-    margin-top: 0;
-  	display: flex;
-  	flex-flow: row wrap;
-    background-color: #C6d5c5;
-    text-shadow: 1px 1px 2px #02010a;
-    border-radius: 0 0 10px 10px;
-    list-style: none;
-  }
+      width: 900px;
+      background-color: #C6d5c5;
+      font-family: 'DancingScriptRegular';
+      margin: auto;
+      padding-top: 10px;
+      margin-top: 0;
+      border-radius: 0 0 10px 10px;
+    }
 
 .contactos{
   padding-top: 10px;
@@ -182,8 +179,6 @@ nav a:hover {
   flex-basis: auto;
   order:1;
   width: 25%;
-  align-items: flex-start;
-
 }
 .politica{
   padding-top: 10px;
@@ -191,7 +186,6 @@ nav a:hover {
   flex-basis: auto;
   order:2;
   width: 25%;
-  align-items: flex-start;
 }
 .sociales{
   padding-top: 10px;
@@ -199,7 +193,6 @@ nav a:hover {
   flex-basis: auto;
   order:3;
   width: 25%;
-  align-items: flex-start;
 }
 .derechos{
   padding-top: 10px;
@@ -207,30 +200,47 @@ nav a:hover {
   flex-basis: auto;
   order:4;
   width: 25%;
-  align-items: flex-start;
+}
 }
 
-@media screen and (min-width:480px) {
+@media screen and (max-width:900px) {
    .pie {
-       flex-wrap:nowrap;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     width: 900px;
+     background-color: #C6d5c5;
+     font-family: 'DancingScriptRegular';
+     margin: auto;
+     padding-top: 10px;
+     margin-top: 0;
+     border-radius: 0 0 10px 10px;
    }
 
-    .contactos {
-        flex-basis:230px;
-        justify-content: center;
-    }
-    .politica {
-        flex-basis:230px;
-          justify-content: center;
-    }
-    .sociales {
-        flex-basis:230px;
-          justify-content: center;
-    }
-    .derechos {
-        flex-basis:230px;
-          justify-content: center;
-    }
+   .contactos{
+     padding-top: 10px;
+     color: #000000;
+     flex-basis: auto;
+     order:1;
+   }
+   .politica{
+     padding-top: 10px;
+     color: #000000;
+     flex-basis: auto;
+     order:2;
+   }
+   .sociales{
+     padding-top: 10px;
+     color: #000000;
+     flex-basis: auto;
+     order:3;
+   }
+   .derechos{
+     padding-top: 10px;
+     color: #000000;
+     flex-basis: auto;
+     order:4;
+   }
 /*Fin de estilos del Pie*/
 /*Estilos de las imagenes secundarias de la Homepage*/
 
@@ -268,7 +278,6 @@ figure img {
 .retrato1, .retrato2 {
     color: #fff;
     font: 100 24px/100px sans-serif;
-    height: 195px;
     text-align: center;
 		}
 
@@ -381,7 +390,6 @@ figure img {
         .paisaje1, .paisaje2 {
         color: #fff;
         font: 100 24px/100px sans-serif;
-        height: 183px;
         text-align: center;
     		}
 
@@ -440,11 +448,13 @@ figure img {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #d5c75f;
   }
 .paisaje2{
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #d5c75f;
   }
   .pai1 {
       background: #d5c75f;
